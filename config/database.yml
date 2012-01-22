@@ -14,8 +14,8 @@ development:
 test:
   adapter: postgresql
   database: abus_test1
-  username: test_usr1
-  password:  test_usr1
+  username: test_usr_dev1
+  password:  test_usr_dev1
   host: localhost
   port: 5432 
 
