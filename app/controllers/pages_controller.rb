@@ -1,15 +1,13 @@
 class PagesController < ApplicationController
   
-  def home
-    @title = "Home"
-  end
+  def show
 
-  def contact
-    @title = "Contact"
+       @page = Page.find(params[:id])
+       @menu = Page.find(:all)
+        @main = Main.find(1)
+         
   end
-
-  def about
-    @title = "About"
-  end
+  
+  
 
 end

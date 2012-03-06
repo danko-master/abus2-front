@@ -1,9 +1,36 @@
-<header>
+<header class="header-pages">
 	<nav class="round">
-     <ul>
-    	<li><%= link_to "Автомобили", '#' %></li>
-        <li><%= link_to "Тарифы", '#' %></li>
-   		<li><%= link_to "Условия аренды", '#' %></li>
-   	 </ul>
+   	 <ul>
+    	<% for page in @menu %>
+			<li><%= link_to page.name, page %></li>
+		<%  end %>
+			<li>&nbsp;</li>
+   	 </ul>   
  	</nav>
+ 	<div>
+ 		<div class="div-left-top"><a href="/"><%= image_tag "sitecar-small.png" %></a></div>
+ 		<div>
+ 			<div>
+ 				<div class="div-arenda-microbus"><a class="a-arenda-microbus" href="/">Аренда Микроавтобусов</a></div>
+ 				<div class="div-phone">
+ 					<table>
+ 						<tr>
+ 							<td><%= image_tag "phone.png" %></td>
+ 							<td><%= @main.contact %></td>
+ 						</tr>
+ 					</table>
+ 					</div> 				
+ 			</div>
+ 			<div class="div-zayavka"><a class="a-zayavka" href="#">Заявка на аренду микроавтобуса</a></div>
+ 		</div>
+ 		<div class="div-clean">&nbsp;</div>
+ 	</div>
+ 	<table class="table-header">
+ 		<tr>
+ 			<td><%= image_tag "content-top-corner1.png" %></td>
+ 			<td class="td-header"><h1 class="h1-header"><%= @page.name %></h1></td>
+ 			<td><%= image_tag "content-top-corner2.png" %></td>
+ 		</tr>
+ 	</table>
+ 	
 </header>

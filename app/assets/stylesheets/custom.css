@@ -22,14 +22,32 @@ body {
 	
 }
 
+a { border: none; outline: none; }
+a img {  border: none; }
+img {  border: none; }
+
+table {padding: 0; margin: 0; border: 0; border-spacing: 0px;}
+table th {vertical-align: top; padding: 0; margin: 0; border: 0;}
+table td {vertical-align: top; padding: 0; margin: 0; border: 0;}
 
 
-header {
+.header-pages {
     width: 963px;
     height: 191px;
     margin-top: 20px;
+    padding-bottom: 20px;
+
     
 	background: url(/assets/bg2.png) center top no-repeat;
+}
+
+.header-main {
+    width: 963px;
+    height: 191px;
+    margin-top: 20px;
+
+    
+	background: url(/assets/bg.png) center top no-repeat;
 }
 
 
@@ -38,8 +56,18 @@ footer {
 	height: 58px;
 	position: absolute;
 	bottom: 0;
+	
+	color: #fff;
       
 	background: url(/assets/base.png) center bottom no-repeat;
+}
+
+.div-header-main{
+	margin-top: -164px;
+}
+
+.div-footer{
+	padding: 15px;
 }
 
 
@@ -47,19 +75,142 @@ footer {
 	padding-bottom: 87px;
 }
 
+.div-content{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
 nav ul li {
 	list-style-type: none;
 	display: inline-block;
 	padding-top: 10px;
-	padding-left: 40px;
+	padding-left: 15px;
+	margin-left: 20px;
+	margin-right: 10px;
+	
+	background: url(/assets/bullet.png) left top no-repeat;
 }
 
 
 nav ul li a {
-	font-size: 1.3em;
+	font-size: 1.2em;
+	text-transform: uppercase;
 	color: #fff;
 }
 
 
+.div-left-top {
+	float:left;
+	margin-top: 45px;
+	margin-left: 10px;
+}
 
 
+
+.div-zayavka{
+	margin-top: 70px;
+	margin-left: 600px;
+}
+
+.a-zayavka{
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.div-zayavka-main-top{
+	background: url(/assets/form-top.png) left top no-repeat;
+	width:100%;
+	height: 73px;
+}
+
+.div-zayavka-main-mid{
+	background: url(/assets/form-mid.png) left top repeat-y;
+	width:100%;
+}
+
+.div-zayavka-main-bot{
+	height: 9px;
+	width:100%;
+	
+	background: url(/assets/form-bot.png) left top no-repeat;
+}
+
+.table-car-zayavka-main{
+	width: 100%;
+}
+
+.td-car-main {
+	width: 453px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.td-zayavka-main{
+	padding-top: 40px;
+	
+	color: #FFFFFF;
+}
+
+.div-arenda-microbus{
+
+	margin-top: 40px;
+	margin-left: 120px;
+	margin-right: 100px;
+	
+	float:left;
+}
+
+.a-arenda-microbus{
+	text-decoration: none;
+	font-size: 1.8em;
+	font-weight: bold;
+	color:#FFFFFF;
+}
+
+.div-arenda-microbus-main{
+
+	margin-top: 40px;
+	margin-left: 336px;
+	margin-right: 100px;
+	
+	float:left;
+}
+
+.div-phone{
+	
+	color:#FFFFFF;
+	
+	vertical-align: top;
+
+}
+
+
+
+.div-clean {
+	clear:both;
+	height: 1px;
+	width: 1px;
+}
+
+
+.table-header{
+	width: 100%;
+	height: 36px;
+}
+
+
+
+.td-header{
+	width: 100%;
+	padding-top: 5px;
+	padding-left: 10px;
+	
+	background: url(/assets/content-top-bg.png) left top repeat-x;
+}
+
+.h1-header{
+	font-size: 1.2em;
+	font-weight:normal;
+
+	color:#FFFFFF;
+}
