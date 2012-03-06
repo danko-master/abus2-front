@@ -1,0 +1,10 @@
+<header class="header-main">
+	<nav class="round">  	 
+   	 <ul>
+    	<% for page in @menumain %>
+			<li><%= link_to page.name, page %></li>
+		<%  end %>
+			<li>&nbsp;</li>
+   	 </ul>   	 
+ 	</nav> 	 	
+</header>

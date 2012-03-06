@@ -1,0 +1,8 @@
+<% content_for :title, @page.title %>
+<% content_for :metadescription, @page.metadescription %>
+<% content_for :metakeywords, @page.metakeywords %>
+<% content_for :head, @page.head %>
+
+
+<%= render 'layouts/header' %>
+<div class="div-content"><%= @page.content %></div>

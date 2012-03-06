@@ -1,0 +1,28 @@
+<% content_for :title, @main.title %>
+<% content_for :metadescription, @main.metadescription %>
+<% content_for :metakeywords, @main.metakeywords %>
+<% content_for :head, @main.head %>
+
+<%= render 'layouts/header-main' %>
+	<div class="div-header-main">
+ 				<div class="div-arenda-microbus-main"><a class="a-arenda-microbus" href="/">Аренда Микроавтобусов</a></div>
+ 				<div class="div-phone">
+ 					<table>
+ 						<tr>
+ 							<td><%= image_tag "phone.png" %></td>
+ 							<td><%= @main.contact %></td>
+ 						</tr>
+ 					</table>
+ 				</div> 				
+ 		</div>
+ 		<table class="table-car-zayavka-main">
+ 			<tr>
+ 				<td class="td-car-main"><%= image_tag "sitecar.png" %></td>
+ 				<td class="td-zayavka-main">
+ 					<div class="div-zayavka-main-top">Заявка на аренду Вы юридическое лицо</div>
+ 					<div class="div-zayavka-main-mid">dfsdfdsfdsf<br><br><br><br>sdsd<br><br>sds<br>sadas</div>
+ 					<div class="div-zayavka-main-bot">&nbsp;</div>	
+ 				</td>
+ 			</tr>
+ 		</table>
+<div class="div-content"><%= @main.content %></div>
