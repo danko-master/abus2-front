@@ -1,12 +1,13 @@
 Abus2::Application.routes.draw do
   
-  get "index/index"
-   root :to => 'index#index'
+
+
+
+  root :to => 'index#index'
 
   resources :pages
-  resources :index
-  resources :mains
-  resources :asaps
+
+
 
 
 
