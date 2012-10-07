@@ -4,6 +4,7 @@ gem 'rails', '3.1.3'
 gem 'pg', '0.12.2'
 gem 'therubyracer', '0.9.9'
 gem 'jquery-rails', '1.0.19'
+gem 'paperclip', '3.1.2'
 
 
 # Gems used only for assets and not required

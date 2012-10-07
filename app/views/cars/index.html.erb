@@ -1,0 +1,16 @@
+<% content_for :title, t('views.car_page') + " " + @main.title %>
+<% content_for :metadescription, @main.metadescription %>
+<% content_for :metakeywords, @main.metakeywords %>
+<% content_for :head, @main.head %>
+
+<%= render 'layouts/header' %>
+
+<ul>  
+       <% @cars_domain.each do |car| %>
+         <%= content_tag_for :li, car, :class => 'cars' do %>
+           <div class="div-car-image"><%= link_to image_tag(car.images.order('order_id').first.image.url(:small)), vehicle_path(:alias => car.alias) if car.images.order('order_id').first %></div>
+           <div class="div-car-desc"><%= link_to car.name, vehicle_path(:alias => car.alias), :class => "cars" %><div class="div-car-desc-short"><%= raw car.short %></div></div>  
+           <div class="div-clean">&nbsp;</div>          
+          <% end %>
+        <% end %>    
+</ul>

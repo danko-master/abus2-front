@@ -5,3 +5,191 @@
  *= require_self
  *= require_tree . 
 */
+
+
+ * {margin: 0; padding: 0;} 
+ 
+ html
+ {
+	height: 100%;
+	
+    
+ }
+
+body {
+	font-family: Calibri, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	
+
+  	height: 100%;
+	margin:0 auto;
+	width: 963px;
+	/*position: relative;*/
+		
+	color:#747474;
+	
+}
+
+a { border: none; outline: none; }
+a img {  border: none; }
+img {  border: none; }
+
+table {padding: 0; margin: 0; border: 0; border-spacing: 0px;}
+table th {vertical-align: top; padding: 0; margin: 0; border: 0;}
+table td {vertical-align: top; padding: 0; margin: 0; border: 0;}
+
+
+
+
+.div-header-main{
+	margin-top: -164px;
+}
+
+.div-footer{
+	padding: 15px;
+}
+
+.div-main{
+   min-height:100%;
+   height:auto !important;
+   height:100%;
+   margin: 0 auto -58px;
+   
+	padding-bottom: 87px;
+}
+
+.div-content{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.push {
+  height: 58px;
+}
+
+
+
+nav ul li a {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+
+.div-left-top {
+	float:left;
+	margin-top: 45px;
+	margin-left: 10px;
+}
+
+
+
+.div-zayavka{
+	margin-top: 70px;
+	margin-left: 600px;
+}
+
+.a-zayavka{
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.table-car-zayavka-main{
+	width: 100%;
+}
+
+.td-car-main {
+	width: 453px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.td-zayavka-main{
+	padding-top: 40px;
+	
+	color: #FFFFFF;
+}
+
+.div-arenda-microbus{
+
+	margin-top: 40px;
+	margin-left: 120px;
+	margin-right: 100px;
+	
+	float:left;
+}
+
+.a-arenda-microbus{
+	text-decoration: none;
+	font-size: 1.8em;
+	font-weight: bold;
+	color:#FFFFFF;
+}
+
+.div-arenda-microbus-main{
+
+	margin-top: 40px;
+	margin-left: 336px;
+	margin-right: 100px;
+	
+	float:left;
+}
+
+.div-phone{
+	
+	color:#FFFFFF;
+	
+	vertical-align: top;
+
+}
+
+
+
+.div-clean {
+	clear:both;
+	height: 1px;
+	width: 1px;
+}
+
+
+.table-header{
+	width: 100%;
+	height: 36px;
+}
+
+
+
+.h1-header{
+	font-size: 1.2em;
+	font-weight:normal;
+
+	color:#FFFFFF;
+}
+
+.div-car-image {
+	float:left;
+}
+
+.div-car-desc {
+	padding-left: 122px;
+}
+
+.div-car-desc-short {
+	margin-top: 3px;
+	
+	text-align: justify;
+}
+
+ul li.cars {	
+	margin-bottom: 18px;
+	
+	list-style-type: none;
+}
+
+ul li a.cars {
+	color: #90C43C;
+}
+
+.td-car-long {
+	padding-top: 20px;
+}

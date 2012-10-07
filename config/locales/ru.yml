@@ -1,0 +1,31 @@
+ru:
+    views:
+      car_page: Автомобили
+      image:
+        of: из
+      order:
+        transfer: Трансфер
+        hour_rent: Почасовая аренда
+        weeding_rent: Заказ на свадьбу
+        holiday_rent: Празничные дни
+        car_price_hour: "Стоимость часа, руб."
+        car_price_MKAD: "За МКАД (руб./км.)"
+        car_min_zakaz: "Минимальный заказ"
+        car_transfer_sheremetevo: "а/п Шереметьево, руб."
+        car_transfer_vnukovo: "а/п Внуково, руб."
+        car_transfer_domodedovo: "а/п Домодедово, руб."
+        car_transfer_ostafevo: "а/п Остафьево, руб."
+        car_transfer_bikovo: "а/п Быково, руб."
+        car_transfer_airport_airport: "Аэропорт-Аэропорт, руб."
+        car_transfer_airport_station: "Аэропорт-Вокзал, руб."
+        car_transfer_station_airport: "Вокзал-Аэропорт, руб."
+        car_weeding_price_hour: "Стоимость руб./час."
+        car_weeding_price_MKAD: "За МКАД (руб./км.)"
+        car_weeding_min_zakaz: "Минимальный заказ"
+        car_weeding_friday: "Пятница"
+        car_weeding_saturday: "Суббота"
+        car_weeding_decor: "Украшения"
+        car_holiday: "Стоимость часа, руб."
+        car_holiday_min_zakaz: "Минимальный заказ в праздничный день"
+        car_holiday_weeding_min_zakaz: "Минимальный заказ на свадьбу в праздничный день"
+    

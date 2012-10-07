@@ -1,0 +1,79 @@
+<% content_for :title, @car.title %>
+<% content_for :metadescription, @car.metadescription %>
+<% content_for :metakeywords, @car.metakeywords %>
+<% content_for :head, @main.head %>
+
+<%= render 'layouts/header' %>
+
+<table>
+	<tr>
+		<td align="center"><%= link_to image_tag(@image.image.url(:medium)), @image.image.url(:original),:class => 'group1' %></td>
+		<td>
+			<ul>  
+			  <% @images.each do |image| %>
+			    <%= content_tag_for :li, image, :class => 'li-car-list' do %> 
+			     <%= link_to image_tag(image.image.url(:small)), image.image.url(:original),:class => 'group1' %>
+			    <% end %>
+			  <% end %>
+			</ul>&nbsp;
+		</td>
+		<td width="33%">
+			<div class="div-zakaz-2">
+				<div class="div-zakaz-2-bg">
+					<table width="100%">
+						<tr>
+							<td width="50%">
+							 <% if @hour_rent %>
+							    <div class="div-zakaz-2-item-b"><%= t('views.order.hour_rent') %></div>							    
+							    <% @hash_price_hour.each do |key,value| %>
+							      <% if (value != nil && value.to_s.length > 0) %>
+							        <div class="div-zakaz-2-item">
+							        	<%= key %>&nbsp;<%= value %>
+							        </div>
+							      <% end %>
+							    <% end %>
+							 <% end %>
+							 <% if @transfer %>
+							    <div class="div-zakaz-2-item-b"><%= t('views.order.transfer') %></div>
+							    <% @hash_transfer.each do |key,value| %>
+							      <% if (value != nil && value.to_s.length > 0) %>
+							        <div class="div-zakaz-2-item">
+							        	<%= key %>&nbsp;<%= value %>
+							        </div>
+							      <% end %>
+							    <% end %>
+							  <% end %>
+							</td> 
+							<td>
+						      <% if @weeding_rent %>
+							    <div class="div-zakaz-2-item-b"><%= t('views.order.weeding_rent') %></div>
+							    <% @hash_weeding_rent.each do |key,value| %>
+							      <% if (value != nil && value.to_s.length > 0) %>
+							        <div class="div-zakaz-2-item">
+							        	<%= key %>&nbsp;<%= value %>
+							        </div>
+							      <% end %>
+							    <% end %>
+							  <% end %>
+							  <% if @holiday_rent %>
+							    <div class="div-zakaz-2-item-b"><%= t('views.order.holiday_rent') %></div>
+							    <% @hash_holiday_rent.each do |key,value| %>
+							      <% if (value != nil && value.to_s.length > 0) %>
+							        <div class="div-zakaz-2-item">
+							        	<%= key %>&nbsp;<%= value %>
+							        </div>
+							      <% end %>
+							    <% end %>
+							  <% end %>
+							</td>
+						</tr>
+					</table>					
+				<%= image_tag "#{session[:current_domain_id]}/zakaz2.png" %>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" class="td-car-long"><%= raw @car.long %></td>
+	</tr>
+</table>
+

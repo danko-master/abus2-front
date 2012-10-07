@@ -1,6 +1,7 @@
 <header class="header-pages">
 	<nav>
    	 <ul>
+   	 	<li><%= link_to t('views.car_page'), cars_path %></li>
     	<% for page in @menu %>
 			<li><%= link_to page.name, page %></li>
 		<%  end %>
@@ -8,10 +9,10 @@
    	 </ul>   
  	</nav>
  	<div>
- 		<div class="div-left-top"><a href="/"><%= image_tag "sitecar-small.png" %></a></div>
+ 		<div class="div-left-top"><a href="/"><%= image_tag "#{session[:current_domain_id]}/sitecar-small.png" %></a></div>
  		<div>
  			<div>
- 				<div class="div-arenda-microbus"><a class="a-arenda-microbus" href="/">Аренда Микроавтобусов</a></div>
+ 				<div class="div-arenda-microbus"><a class="a-arenda-microbus" href="/"><%= Domain.find(session[:current_domain_id]).title %></a></div>
  				<div class="div-phone">
  					<table>
  						<tr>
@@ -27,9 +28,9 @@
  	</div>
  	<table class="table-header">
  		<tr>
- 			<td><%= image_tag "content-top-corner1.png" %></td>
+ 			<td><%= image_tag "#{session[:current_domain_id]}/content-top-corner1.png" %></td>
  			<td class="td-header"><h1 class="h1-header"><%= @page.name %></h1></td>
- 			<td><%= image_tag "content-top-corner2.png" %></td>
+ 			<td><%= image_tag "#{session[:current_domain_id]}/content-top-corner2.png" %></td>
  		</tr>
  	</table>
  	

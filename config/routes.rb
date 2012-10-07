@@ -1,11 +1,12 @@
 Abus2::Application.routes.draw do
   
 
-
-
   root :to => 'index#index'
 
   resources :pages
+  resources :cars
+  
+  match "/vehicle/:alias", :to => 'cars#show', :as => 'vehicle'
 
 
 

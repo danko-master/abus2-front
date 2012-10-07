@@ -1,6 +1,7 @@
 <header class="header-main">
 	<nav>  	 
    	 <ul>
+   	 	<li><%= link_to t('views.car_page'), cars_path %></li>
     	<% for page in @menumain %>
 			<li><%= link_to page.name, page %></li>
 		<%  end %>

@@ -1,0 +1,49 @@
+// Place all the styles related to the Cars controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul li.li-car-list {
+  list-style-type: none;
+  margin-left: 12px;
+  margin-right: 13px;
+  margin-bottom: 12px;
+}
+
+.div-zakaz-2{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d7d7d7;
+  border-radius:4px;
+  
+  padding: 3px;
+}
+
+.div-zakaz-2-bg{
+  background: #ecf2f4;
+}
+
+.div-zakaz-2-item{
+  margin: 4px;
+  padding: 2px;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius:4px;
+  
+  background: #fff;
+}
+
+.div-zakaz-2-item-b{
+  margin: 4px;
+  padding: 2px;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius:4px;
+  
+  background: #fff;
+  
+  font-weight: bold;
+}

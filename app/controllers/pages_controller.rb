@@ -1,13 +1,9 @@
 class PagesController < ApplicationController
   
   def show
-
        @page = Page.find(params[:id])
-       @menu = Page.find(:all)
-        @main = Main.find(1)
-         
+       @menu = Page.where(:domain => session[:current_domain_id])
+       @main = Main.find(session[:current_domain_id])        
   end
-  
-  
 
 end

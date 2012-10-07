@@ -2,9 +2,11 @@
 <html>
 <head>
   <title><%= yield :title %></title>
+  <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <%= render 'layouts/stylesheets' %>
+  
+  <%= stylesheet_link_tag "theme-#{session[:current_domain_id]}" %>
   
   <meta name="description" content="<%= yield :metadescription %>" />
   <meta name="keywords" content="<%= yield :metakeywords %>" />
@@ -12,8 +14,8 @@
   
 </head>
 <body>
-<div class="div-main"><%= yield %><div>
+  <div class="div-main"><%= yield %><div class="push"></div></div>  	
 <%= render 'layouts/footer' %>
-<%= debug(params) if Rails.env.development? %>
+
 </body>
 </html>
